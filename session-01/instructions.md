@@ -36,7 +36,7 @@ If you need to install multiple versions of python, I suggest you to use PyEnv. 
 Also PyEnv can be installed using Brew:
 ```brew install pyenv```
 
-#### Install Python3.7 (for Window)
+#### Install Python3.7 (for Windows)
 The following instructions were taken from:
 [https://realpython.com/installing-python/#step-1-download-the-python-3-installer](https://realpython.com/installing-python/#step-1-download-the-python-3-installer)
 
@@ -47,17 +47,20 @@ Go to the download page for Windows at python.org and choose either the 32-bit o
 Once you have chosen and downloaded an installer, simply run it by double-clicking on the downloaded file and check the box that says **Add Python 3.x to PATH** to ensure that the interpreter will be placed in your execution path.
 
 #### Install Python3.7 (for Linux)
-> Those instructions are missing... maybe you can add them?
+1. Run
+```sudo apt install python3.7```
 
 ### Install Java
 
 ##### 1.Install JDK
 If you do not already have a Java JDK on your system, please install it from [Oracle's Java site](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA). 
 
-We will use **Java 11** in this course.Note you must install the JDK (The Java Development Kit), which includes a JVM and the tools a developer needs (e.g., javac, the Java compiler).
+We will use **Java 11** in this course.
+Note you must install the JDK (The Java Development Kit), which includes a JVM and the tools a developer needs (e.g., javac, the Java compiler).
 
 If you do not like to use Oracle's JDK you might want to use other implementations (e.g., OpenJDK)
-Check that you have the right version using:
+
+Check that you have the right version using:
 ```java -version```
 
 ##### 2. Optionally Install jEnv
@@ -65,17 +68,21 @@ jEnv is a little utility similar to PyEnv. You can read more about jEnv [here](h
 
 jEnv can be also installed using Brew:
 ```brew install jenv```
-### Install NodeJs 
 
-#### Install NodeJs (Mac Os)We use Node.js v10.20.1 LTS as the JavaScript environment in this course. 
-You're free to install it in whatever way you want, but I suggest to use `nvm` (Node Version Manager) to install and manage multiple different versions of node on your machine. 
+### Install NodeJs 
+
+#### Install NodeJs (Mac Os)
+We use Node.js v10.20.1 LTS as the JavaScript environment in this course. 
+
+You're free to install it in whatever way you want, but I suggest to use `nvm` (Node Version Manager) to install and manage multiple different versions of node on your machine. 
 
 You can install `nvm` using Homebrew:
 ```brew install nvm```
 
 Once you have nvm, you can run: 
 ```nvm install 10.20``` to install the version, and ```nvm use 10.20``` to start using that version.
-Check which version of node you are using:
+
+Check which version of node you are using:
 ```node --version```
 
 You can check which version of the V8 JavaScript virtual machine your node use using:
